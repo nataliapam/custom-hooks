@@ -1,12 +1,11 @@
 Example:
 
 ```
-    const initialForm = {
-        name: "",
-        age: 0,
-        email: ""
-    };
+const { formState, handleChange, reset } = useForm({
+    email: "ng@gmail.com",
+    password: "123456",
+  });
+  const { email, password } = formState;
 
-    const [ formValues, handleInputChange, reset ] = useForm( initialForm );
 
 ```
